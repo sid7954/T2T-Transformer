@@ -135,7 +135,7 @@ def attention_lm_base():
   hparams.batch_size = 8192
   hparams.max_length = 256
   hparams.dropout = 0.0
-  hparams.clip_grad_norm = 0.  # i.e. no gradient clipping
+  hparams.clip_grad_norm = 5.0  # i.e. no gradient clipping
   hparams.optimizer_adam_epsilon = 1e-9
   hparams.learning_rate_decay_scheme = "noam"
   hparams.learning_rate = 0.1
