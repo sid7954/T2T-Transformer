@@ -125,7 +125,7 @@ class CycleGAN(t2t_model.T2TModel):
 def cycle_gan_small():
   """Set of hyperparameters."""
   hparams = transformer_vae.transformer_ae_small()
-  hparams.batch_size = 2048
+  hparams.batch_size = 2048*2/2
   hparams.input_modalities = "inputs:symbol:identity"
   hparams.target_modality = "symbol:identity"
   hparams.weight_decay = 3.0
