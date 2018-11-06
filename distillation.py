@@ -186,7 +186,7 @@ def distill_resnet_32_to_15_cifar20x5():
   hparams.add_hparam("learning_rate_multiples", [0.1, 0.01, 0.001])
 
   hparams.task_balance = 0.28
-  hparams.distill_temperature = 2.0
+  hparams.distill_temperature = 4.0/2 
 
   hparams.num_classes = 20
 
